@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>気象庁 | 日本の年平均降水量偏差（mm）</title>
+<meta name="Author" content="気象庁 Japan Meteorological Agency">
+<meta name="keywords" content="気象庁 Japan Meteorological Agency">
+<meta name="description" content="日本の年平均降水量偏差（mm）">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" type="text/css" href="wheather-precipitation_files/define.css" media="all">
+<script type="text/javascript" src="wheather-precipitation_files/jquery.js"></script>
+<style type="text/css" media="all"><!-- @import url(/com/default.css); --></style>
+</head>
+
+<body>
+<noscript><div>すべての機能をご利用いただくにはJavascriptを有効にしてください。</div></noscript>
+<!--header start -->
+<div id="header_area">
+	<div id="nheader">
+		<div id="logo"><a href="http://www.jma.go.jp/jma/index.html"><img src="wheather-precipitation_files/logo.gif" alt="気象庁" width="120" height="67"></a></div>
+
+		<div id="header_right">
+			<div id="header_link">
+				<ul>
+					<li id="toMain"><a href="#main">本文へ</a></li>
+					<li xml:lang="en" lang="en"><a href="http://www.jma.go.jp/jma/indexe.html">ENGLISH</a></li>
+					<li><a href="http://www.jma.go.jp/jma/kishou/info/goiken.html">ご意見･ご感想</a></li>
+					<li id="siteMap"><a href="http://www.jma.go.jp/jma/kishou/sitemap.html">サイトマップ</a></li>
+				</ul>
+			</div>
+			<!-- search -->
+			<div id="yjsearch" class="watermark">
+				<p>キーワードを入力し検索ボタンを押下ください。</p>
+				<form action="http://www.jma.go.jp/jma/menu/search.html" method="get" id="srch">
+					<input class="" results="5" name="p" id="srchInput" type="search">
+					<input src="wheather-precipitation_files/btn_search.gif" alt="検索" id="srchBtn" onclick="document.getElementById('srchInput').focus();" type="image">
+					<input id="fr" name="fr" value="cse" type="hidden">
+					<input id="ei" name="ei" value="utf-8" type="hidden">
+					<input id="csid" name="csid" value="pD.LqPJKNL6pX5S8V0Zj684fKOuX.849vg9h" type="hidden">
+					<input name="vs" value="www.jma.go.jp" id="yjInsite" type="hidden">
+				</form>
+				<img src="wheather-precipitation_files/pD.gif" alt=""> </div>
+			<script type="text/javascript">
+					(function() {
+					var sb = document.getElementById('yjsearch');
+					if (sb && sb.className == 'watermark') {
+						var si = document.getElementById('srchInput');
+						var f = function() { si.className = 'nomark'; };
+						var b = function() {
+							if (si.value == '') {
+								si.className = '';
+							}
+						};
+						si.onfocus = f;
+						si.onblur = b;
+						if (!/[&?]p=[^&]/.test(location.search)) {
+							b();
+						} else {
+							f();
+						}
+					}
+					})();
+				</script> 
+			<!-- search --> 
+		</div>
+		<ul id="gnavi">
+			<li><a href="http://www.jma.go.jp/">ホーム</a></li>
+			<li><a href="http://www.jma.go.jp/jma/menu/menuflash.html">防災情報</a></li>
+			<li><a href="http://www.jma.go.jp/jma/menu/menureport.html" class="on">各種データ・資料</a></li>
+			<li><a href="http://www.jma.go.jp/jma/menu/menuknowledge.html">知識・解説</a></li>
+			<li><a href="http://www.jma.go.jp/jma/menu/menuabout.html">気象庁について</a></li>
+			<li><a href="http://www.jma.go.jp/jma/menu/menulinks.html">案内・申請</a></li>
+		</ul>
+	</div>
+</div>
+<!--header end -->
+
+
+<div id="contents_area2">
+	<div id="ncontents2">
+<!-- pankuzu menu -->
+		<ul class="breadcrumb2">
+			<li><a href="http://www.jma.go.jp/">ホーム</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="http://www.jma.go.jp/jma/menu/menureport.html">各種データ・資料</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="http://www.data.jma.go.jp/cpdinfo/menu/index.html">地球環境・気候</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="http://www.data.jma.go.jp/cpdinfo/index_temp.html">地球温暖化</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="http://www.data.jma.go.jp/cpdinfo/temp/index.html">気温・降水量の長期変化傾向</a>&nbsp;&gt;&nbsp;</li>
+			<li>日本の年平均降水量偏差</li>
+		</ul>
+<!-- //pankuzu menu -->
+
+
+		<div id="main">
+
+<!-- contents -->
+<h1>日本の年平均降水量偏差（mm）</h1>
+
+<p class="mtx">国内51地点での年降水量の基準値との偏差（基準値に対する差で、mmであらわす）を平均した値を示します。基準値は1981〜2010年の30年平均値です。
+<br>これらの値は、データの見直しなどで変わることがあります。使用される際には、常に最新のものを御利用下さい。
+<br><a href="http://www.data.jma.go.jp/cpdinfo/temp/an_jpn_r.html">図</a>はこちらです。</p>
+<div class="l3">
+<table frame="border" border="1" cellspacing="0">
+    <tbody><tr align="center" bgcolor="#ddffff">
+      <td> </td>
+      <td> &nbsp;偏差&nbsp;</td>
+    </tr>
+<tr align="center"> <td bgcolor="#ddffff"> 1898年 </td> <td style="text-align:right"> +15.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1899年 </td> <td style="text-align:right"> +199.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1900年 </td> <td style="text-align:right"> -43.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1901年 </td> <td style="text-align:right"> +48.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1902年 </td> <td style="text-align:right"> +154.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1903年 </td> <td style="text-align:right"> +265.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1904年 </td> <td style="text-align:right"> -48.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1905年 </td> <td style="text-align:right"> +256.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1906年 </td> <td style="text-align:right"> +41.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1907年 </td> <td style="text-align:right"> +109.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1908年 </td> <td style="text-align:right"> +32.3 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1909年 </td> <td style="text-align:right"> +87.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1910年 </td> <td style="text-align:right"> +145.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1911年 </td> <td style="text-align:right"> +255.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1912年 </td> <td style="text-align:right"> +96.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1913年 </td> <td style="text-align:right"> -116.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1914年 </td> <td style="text-align:right"> +80.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1915年 </td> <td style="text-align:right"> +209.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1916年 </td> <td style="text-align:right"> +195.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1917年 </td> <td style="text-align:right"> +102.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1918年 </td> <td style="text-align:right"> +120.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1919年 </td> <td style="text-align:right"> +10.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1920年 </td> <td style="text-align:right"> +171.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1921年 </td> <td style="text-align:right"> +237.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1922年 </td> <td style="text-align:right"> +83.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1923年 </td> <td style="text-align:right"> +405.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1924年 </td> <td style="text-align:right"> -186.3 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1925年 </td> <td style="text-align:right"> -22.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1926年 </td> <td style="text-align:right"> -188.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1927年 </td> <td style="text-align:right"> -3.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1928年 </td> <td style="text-align:right"> +96.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1929年 </td> <td style="text-align:right"> -48.3 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1930年 </td> <td style="text-align:right"> -60.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1931年 </td> <td style="text-align:right"> +80.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1932年 </td> <td style="text-align:right"> +50.3 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1933年 </td> <td style="text-align:right"> -150.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1934年 </td> <td style="text-align:right"> -152.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1935年 </td> <td style="text-align:right"> +216.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1936年 </td> <td style="text-align:right"> +98.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1937年 </td> <td style="text-align:right"> +49.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1938年 </td> <td style="text-align:right"> +190.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1939年 </td> <td style="text-align:right"> -198.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1940年 </td> <td style="text-align:right"> -222.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1941年 </td> <td style="text-align:right"> +288.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1942年 </td> <td style="text-align:right"> -106.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1943年 </td> <td style="text-align:right"> -39.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1944年 </td> <td style="text-align:right"> -160.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1945年 </td> <td style="text-align:right"> +313.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1946年 </td> <td style="text-align:right"> -42.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1947年 </td> <td style="text-align:right"> -110.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1948年 </td> <td style="text-align:right"> +0.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1949年 </td> <td style="text-align:right"> +206.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1950年 </td> <td style="text-align:right"> +224.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1951年 </td> <td style="text-align:right"> +68.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1952年 </td> <td style="text-align:right"> +168.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1953年 </td> <td style="text-align:right"> +268.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1954年 </td> <td style="text-align:right"> +310.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1955年 </td> <td style="text-align:right"> +99.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1956年 </td> <td style="text-align:right"> +218.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1957年 </td> <td style="text-align:right"> +137.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1958年 </td> <td style="text-align:right"> +105.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1959年 </td> <td style="text-align:right"> +241.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1960年 </td> <td style="text-align:right"> -81.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1961年 </td> <td style="text-align:right"> +107.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1962年 </td> <td style="text-align:right"> -54.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1963年 </td> <td style="text-align:right"> +19.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1964年 </td> <td style="text-align:right"> -51.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1965年 </td> <td style="text-align:right"> +173.3 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1966年 </td> <td style="text-align:right"> +264.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1967年 </td> <td style="text-align:right"> -112.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1968年 </td> <td style="text-align:right"> -63.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1969年 </td> <td style="text-align:right"> -34.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1970年 </td> <td style="text-align:right"> +8.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1971年 </td> <td style="text-align:right"> +6.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1972年 </td> <td style="text-align:right"> +299.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1973年 </td> <td style="text-align:right"> -183.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1974年 </td> <td style="text-align:right"> +31.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1975年 </td> <td style="text-align:right"> +107.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1976年 </td> <td style="text-align:right"> +179.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1977年 </td> <td style="text-align:right"> -130.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1978年 </td> <td style="text-align:right"> -319.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1979年 </td> <td style="text-align:right"> +102.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1980年 </td> <td style="text-align:right"> +308.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1981年 </td> <td style="text-align:right"> -31.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1982年 </td> <td style="text-align:right"> +0.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1983年 </td> <td style="text-align:right"> +76.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1984年 </td> <td style="text-align:right"> -355.5 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1985年 </td> <td style="text-align:right"> +97.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1986年 </td> <td style="text-align:right"> -213.3 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1987年 </td> <td style="text-align:right"> -143.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1988年 </td> <td style="text-align:right"> +17.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1989年 </td> <td style="text-align:right"> +190.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1990年 </td> <td style="text-align:right"> +148.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1991年 </td> <td style="text-align:right"> +184.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1992年 </td> <td style="text-align:right"> -58.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1993年 </td> <td style="text-align:right"> +318.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1994年 </td> <td style="text-align:right"> -417.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1995年 </td> <td style="text-align:right"> -50.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1996年 </td> <td style="text-align:right"> -230.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1997年 </td> <td style="text-align:right"> -29.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1998年 </td> <td style="text-align:right"> +355.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 1999年 </td> <td style="text-align:right"> +110.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2000年 </td> <td style="text-align:right"> -23.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2001年 </td> <td style="text-align:right"> -26.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2002年 </td> <td style="text-align:right"> -148.6 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2003年 </td> <td style="text-align:right"> +83.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2004年 </td> <td style="text-align:right"> +204.3 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2005年 </td> <td style="text-align:right"> -206.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2006年 </td> <td style="text-align:right"> +155.0 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2007年 </td> <td style="text-align:right"> -157.2 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2008年 </td> <td style="text-align:right"> -74.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2009年 </td> <td style="text-align:right"> -34.1 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2010年 </td> <td style="text-align:right"> +257.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2011年 </td> <td style="text-align:right"> +167.8 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2012年 </td> <td style="text-align:right"> +143.7 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2013年 </td> <td style="text-align:right"> +60.4 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2014年 </td> <td style="text-align:right"> +123.9 </td> </tr> 
+<tr align="center"> <td bgcolor="#ddffff"> 2015年 </td> <td style="text-align:right"> +187.8 </td> </tr> 
+</tbody></table><br>
+</div>
+
+<br>
+<br>
+<div id="explain">
+<ul class="pagelink mtx">
+	<li>日本の年降水量偏差の<a href="http://www.data.jma.go.jp/cpdinfo/temp/clc_jpn_r.html">算出方法</a></li>
+  <li><a href="http://www.data.jma.go.jp/cpdinfo/temp/rireki_temp.html">更新履歴</a></li>
+</ul>
+</div>
+
+<hr>
+<script type="text/javascript">
+<!--
+myDay = document.lastModified;
+myD = new Date(myDay);
+myYear = myD.getYear();
+myYear4 = (myYear < 2000) ? myYear+1900 : myYear;
+myMonth = myD.getMonth() + 1; 
+myDate = myD.getDate(); 
+myStr = "最終更新 " + myYear4 + "/" + myMonth + "/" + myDate;
+document.write( myStr ); 
+// -->
+</script>最終更新 2016/1/29
+
+<!-- //contents -->
+
+<p class="totop"><a href="#nheader">このページのトップへ</a></p>
+</div>
+</div>
+<div id="footer_area">
+	<div id="nfooter">
+		<p>気象庁：〒100-8122東京都千代田区大手町1-3-4(<a href="http://www.jma.go.jp/jma/kishou/intro/map.html">案内図</a>)  代表電話：03-3212-8341</p>
+		<ul>
+			<li><a href="http://www.jma.go.jp/jma/kishou/info/coment.html">気象庁ホームページについて</a></li>
+		</ul>
+	</div>
+</div>
+
+
+</div></body></html>
